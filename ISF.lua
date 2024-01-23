@@ -41,7 +41,7 @@ function isf.new(data: TagMeta) : TagData
     return data
 end
 
-function isf:query(tag_id) 
+function isf:query(tag_id: string) : {Instance}
     return CS:GetTagged(tag_id)
 end
 
