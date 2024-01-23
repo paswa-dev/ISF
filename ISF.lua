@@ -61,8 +61,8 @@ function isf:queries(...)
     end
 end
 
-function isf.loop(sequence: {})
-    
+function isf.loop(sequence: {}, event: RBXScriptSignal)
+
 end
 
 
