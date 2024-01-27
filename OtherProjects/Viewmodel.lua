@@ -1,3 +1,5 @@
+--// Why no types? Pretty simple.
+
 local using, stopping
 
 local vm = {
@@ -24,12 +26,12 @@ local function init()
         using, stopping = vm.Events.using, vm.Events.stopping
     end
 end
---// Object Import
-function vm.importfolder(folder)
+--// Object Utilities
+function vm.importfolder(folder: Folder, isViewmodel: boolean?, searchDescendants: boolean?)
 
 end
 
-function vm.import(object)
+function vm.import(object: PVInstance, isViewmodel: boolean?)
 
 end
 --// Viewmodel, Object Initialization
@@ -40,18 +42,11 @@ end
 function vm.stop()
 
 end
---// Viewmodel Import
+--// Viewmodel Utilities
 function vm.setviewmodel(viewmodel_name)
 
 end
 
-function vm.importviewmodel(viewmodel)
-
-end
-
-function vm.importviewmodel(viewmodel)
-
-end
 --// Stuff
 init()
 
